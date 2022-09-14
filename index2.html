@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketentuan Penggunaan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets\style.css">
+
+</head>
+
+<body>
+    <div class="splash">
+        <h1 class="fade-in"><img src="assets/img/indonesia-flag-icon-256.png" width="2%"> Cara Penggunaan</h1>
+    </div>
+    <button type="button" style="width:5%" onclick="location.href='readme.html'">
+        EN
+    </button>
+    <button type="button" style="width: 5%;" onclick="location.href='#'">
+        ID
+    </button>
+    <main>
+        <!-- Close this file first before go back to the program -->
+        <h1 class="faq-heading">MyAbsence</h1>
+        <h3 class="faq-heading">Cara Penggunaan</h3>
+        <section class="faq-container">
+            <div class="faq-one">
+
+                <!-- faq question -->
+                <h1 class="faq-page">Hal - hal yang dibutuhkan untuk menjalankan program</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>OS yang didukung: Windows 10/11</p>                
+                    <br>
+                    <p>Spesifikasi Minimum:</p>
+                    <p>AMD Athlon Silver 3050u</p>
+                    <p>RADEON Graphics</p> 
+                    <p>4GB RAM</p>
+                    <p>5GB Disk Space</p>
+                    <p>WebCam</p>
+                    <br>
+                    <p>Instalasi yang diperlukan:
+                        <br><strong>- python >= 3.7</strong>
+                        <br><a href="https://www.python.org/downloads/release/python-370/" target="_blank">https://www.python.org/downloads/</a>
+                        <br>
+                    </p>
+                    <p>Install library - library di bawah menggunakan pip di cmd:
+                        <ul>
+                            <li><strong>OpenCV (Termasuk Numpy)</strong><br><code>pip install opencv-python</code></li>
+                            <br>
+                            <li><strong>PILLOW</strong><br><span style="color: crimson; font-weight: bold; font-size: 11px;"></span><code>pip install pillow</code><br><span style="color: crimson; font-weight: bold; font-size: 11px;"></span></li>
+                            <br>
+                            <li><strong>Tensorflow (Termasuk Keras and Tensorboard)</strong><br><code>pip install tensorflow for GPU CUDA or pip install tensorflow-cpu FOR CPU ONLY / AMD USER</code></li>
+                            <br>
+                            <li><strong>FaceNet Keras model</strong><br><a href="https://drive.google.com/drive/folders/12aMYASGCKvDdkygSv1yQq8ns03AStDO_" target="_blank">facenet_keras.h5</a></li>
+                            <br>
+                            <li><strong>HaarCascade Classifier Models</strong><br><a href="https://github.com/opencv/opencv/tree/master/data/haarcascades" target="_blank">Haar Cascade</a></li>
+                            <br>
+                            <li><strong>Python Local Library</strong><br><code>TkInter, Random, OS </code></li>
+                        </ul>
+                        </p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-two">
+
+                <!-- faq question -->
+                <h1 class="faq-page">Hal - hal yang harus diketahui sebelum menjalankan program</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Ketentuan:
+                        <br><strong>- Satu orang sekali menjalankan fungsi (baik registrasi maupun presensi).</strong>
+                        <br><strong>- buka file 'DAFTAR HADIR.xlsx' untuk update secara real-time setiap 1 menit anda melakukan absensi.</strong>
+                        <br>- Untuk penggunaan pertama, sebelum menjalankan fungsi attendance, registrasikan setidaknya satu wajah terlebih dahulu.
+                        <br>catatan: jangan membuka file 'Attendance.csv' di program spreadsheet (seperti Ms. Excel) saat program berjalan.
+                    </p>
+                </div>
+            </div>
+            <hr class="hr-line">
+
+            <div class="faq-three">
+
+                <!-- faq question -->
+                <h1 class="faq-page">Cara melakukan registrasi wajah</h1>
+
+                <!-- faq answer -->
+
+                <div class="faq-body">
+                    <p>Ada dua cara melakukan registrasi wajah:
+                        <br>
+                        <ul>
+                            <li>buka program utama (.exe)</li>
+                            <li>klik tombol 'DAFTAR' button</li>
+                            <li>masukkan nama dan pekerjaan<strong>(satu orang untuk sekali klik tombol face registration)</strong></li>
+                            <li>klik 'AMBIL GAMBAR' untuk ambil gambar</li>
+                            <li>Jika sudah siap, silahkan klik window face cam, lalu tekan 'ENTER' di keyboard untuk mengambil gambar, dan kamera akan otomatis tertutup anda akan dibawa ke main menu kembali.</li>
+                            <li>Melakukan pengecekan setelah foto ter-registrasi di folder (default MyAbsence/Assets/data/)</li>
+                        </ul>
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <hr class="hr-line">
+
+
+            <div class="faq-four">
+
+                <!-- faq question -->
+                <h1 class="faq-page">Cara menggunakan attendance program</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>
+                        <strong>!Penting: Anda harus registrasi setidaknya satu wajah sebelum menjalankan fungsi ini.</strong>
+                        <ul>
+                            <li>Buka program utama (.exe)</li>
+                            <li>klik tombol 'ABSEN'</li>
+                            <li>Ingat: sekali jalan satu orang</li>
+                            <li>Jika sudah siap, silahkan klik window face cam,lalu tekan 'ENTER' di keyboard untuk mengambil absen, lalu tekan 'ESC' di keyboard untuk menutup kamera</li>
+                            <li>Anda dapat memantau nama anda di DAFTAR HADIR.xlsx setelah 1 menit melakukan absensi.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="assets\main.js"></script>
+    <footer style="position: fixed;padding: 10px 10px 0px 10px;bottom: 0;height: 40px;">&copy;2022</span></footer>
+</body>
+
+
+</html>

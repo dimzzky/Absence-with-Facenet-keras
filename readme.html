@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets\style.css">
+    <!-- <link rel="stylesheet" href="assets/style/copyclipboard.css"> -->
+</head>
+
+<body>
+    
+
+    <div class="splash">
+        <h1 class="fade-in"><img src="assets/img/england-flag-icon-256.png" width="2%"> FAQ</h1>
+        
+    </div>
+
+
+
+    <button type="button" style="width: 5%;" onclick="location.href='#'">
+        EN
+    </button>
+    <button type="button" style="width: 5%;" onclick="location.href='index2.html'">
+        ID
+    </button>
+    <main>
+        <!-- Close this file first before go back to the program -->
+        <h1 class="faq-heading">MyAbsence</h1>
+        <h3 class="faq-heading">FAQ'S</h3>
+        <section class="faq-container">
+            <div class="faq-one">
+
+                <!-- faq question -->
+                <h1 class="faq-page">Essential requirements to run the program</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>OS Supported: Windows 10/11</p>
+                    <br>
+                    <p>Minimum Requirments Specification :</p>
+                    <p>AMD Athlon Silver 3050u</p>
+                    <p>RADEON Graphics</p> 
+                    <p>4GB RAM</p>
+                    <p>5GB Disk Space</p>
+                    <p>WebCam</p>
+                    <br>
+                    <p>Installation required:
+                        <br><strong>- python 3.7 (Required!)</strong>
+                        <br><a href="https://www.python.org/downloads/release/python-370/" target="_blank">https://www.python.org/downloads/</a>
+                        <br>
+                    </p>
+                    <p>Install the following lib with pip on cmd (recommended version):
+                    <ul>
+                        <li><strong>OpenCV (incl. Numpy)</strong><br><code>pip install opencv-python</code></li>
+                        <br>
+                        <li><strong>PILLOW</strong><br><span style="color: crimson; font-weight: bold; font-size: 11px;"></span><code>pip install pillow</code><br><span style="color: crimson; font-weight: bold; font-size: 11px;"></span></li>
+                        <br>
+                        <li><strong>Tensorflow (incl. Keras and Tensorboard)</strong><br><code>pip install tensorflow for GPU CUDA or pip install tensorflow-cpu FOR CPU ONLY / AMD USER</code></li>
+                        <br>
+                        <li><strong>FaceNet Keras model</strong><br><a href="https://drive.google.com/drive/folders/12aMYASGCKvDdkygSv1yQq8ns03AStDO_" target="_blank">facenet_keras.h5</a></li>
+                        <br>
+                        <li><strong>HaarCascade Classifier Models</strong><br><a href="https://github.com/opencv/opencv/tree/master/data/haarcascades" target="_blank">Haar Cascade</a></li>
+                        <br>
+                        <li><strong>Python Local Library</strong><br><code>TkInter, Random, OS </code></li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <hr class="hr-line">
+
+            <div class="faq-two">
+
+                <!-- faq question -->
+                <h1 class="faq-page">Do's and Don'ts</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Rules:
+                        <br><strong>- one person per run</strong>
+                        <br><strong>- open 'DAFTAR HADIR.xlsx' file for real time update every 1 min</strong>
+                        <br><strong>- for the first user, register the face first before running attendance function</strong> 
+                        <br>note: never open 'Attendance.csv' file on spreadsheet program (ex: Ms. Excel) when the program running
+                    </p>
+                </div>
+            </div>
+            <hr class="hr-line">
+
+
+            <div class="faq-three">
+
+                <!-- faq question -->
+                <h1 class="faq-page">How to register face</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>There are two ways to register your face:
+                        <br>
+                        <ul>
+                            <li>Open the main program (.exe)</li>
+                            <li>click 'DAFTAR' button</li>
+                            <li>enter the face name and your occupation <strong>(one person per runs)</strong></li>
+                            <li>click "AMBIL GAMBAR" to take photos</li>
+                            <li>If all set, click the facecam window, press 'ENTER' on your keyboard to take image, and camera will automatically close and bring app back to main menu</li>
+                            <li>Check if the photo is registered in the folder (default MyAbsence/Assets/data/)</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="faq-four">
+
+                <!-- faq question -->
+                <h1 class="faq-page">How to use attendance program</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>
+                        <strong><span style="color: crimson;">!important: you need to register at least one face before you run this function.</span></strong>
+                        <ul>
+                            <li>Open the main program (.exe)</li>
+                            <li>Click 'ABSEN' button</li>
+                            <li>Remember the rules: one person per runs</li>
+                            <li>If all set, click the facecam window,press 'ENTER' on your keyboard take absence, press 'ESC' on your keyboard to close camera, and camera will automatically close and bring app back to main menu</li>
+                            <li>you can check at DAFTAR HADIR.xlsx it will updated every 1 min after you take absence</li>
+                            <br><strong><span style="color: crimson;">NOTE!:Be Patient is gold :) .</span></strong>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="assets\main.js"></script>
+    <footer style="position: fixed;padding: 10px 10px 0px 10px;bottom: 0;height: 40px;">&copy;2022</span></footer>
+</body>
+
+
+</html>
